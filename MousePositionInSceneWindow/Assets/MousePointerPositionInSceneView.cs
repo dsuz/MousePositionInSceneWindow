@@ -60,14 +60,14 @@ public class MousePointerPositionInSceneView
         RaycastHit hit = new RaycastHit();
         if (Physics.Raycast(cameraPosition, m_raycastDistance * (mousePosition - cameraPosition).normalized, out hit))
         {
-            // レイキャストがヒットしたら、ヒットした位置にマーク（球）を表示する。
-            Handles.SphereHandleCap(0, hit.point, Quaternion.identity, .3f, EventType.Repaint);
-
-            // ヒットした位置の座標をシーンビュー上の GUI に表示する。
+            // レイキャストがヒットしたら、ヒットした位置の座標をシーンビュー上の GUI に表示する。
             Handles.BeginGUI();
             string message = "Hit Position (3D): " + hit.point;
             GUILayout.Label(message);
             Handles.EndGUI();
+
+            // レイがヒットした位置にマーク（球）を表示する。
+            Handles.SphereHandleCap(0, hit.point, Quaternion.identity, .3f, EventType.Repaint);
         }
     }
 }
