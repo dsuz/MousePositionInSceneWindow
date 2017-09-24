@@ -1,7 +1,7 @@
 # MousePositionInSceneWindow
 
 ## Overview
-This tool allows to know the mouse pointer position in Unity Editor's scene window when designing scenes. Shows the position where the ray hits collider while the ray is casted from scene view camera to the mouse pointer position.
+This tool allows to know the mouse pointer position in Unity Editor's scene window when designing scenes. Shows the 3D position where the ray hits collider while the ray is casted from scene view camera to the mouse pointer position. This won't work for 2D mode of scene window.
 
 ## Install
 1. Import MousePointerPositionInSceneView.cs into your project.
@@ -13,5 +13,5 @@ This tool allows to know the mouse pointer position in Unity Editor's scene wind
 1. Select [Window] -> [Show mouse pointer in Scene] to turn on this tool.
 1. Point any object in scene window.
 1. It will show a ball under the mouse pointer and the position of the ball at left-upper corner of the scene window.
-1. Stay your mouse pointer on object for a while if it doesn't seem working.
+1. Stay your mouse pointer on object for a while or click mouse buttons if it doesn't seem working.
 1. Select [Window] -> [Show mouse pointer in Scene] again to turn off this tool.
